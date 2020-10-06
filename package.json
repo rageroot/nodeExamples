@@ -1,7 +1,9 @@
 {
   "name": "nodehw",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "description": "Hellow World on Node",
   "main": "index.js",
   "scripts": {
