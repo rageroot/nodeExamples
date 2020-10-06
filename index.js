@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const articles = [{title: 'Example'}];
 
@@ -8,6 +9,9 @@ const port = process.env.PORT || 3000;
     res.send('Hello World!');
 });*/
 
+app.use(bodyParser.json()); //поддерживает тела запросов, закодированные в json
+app.use(bodyParser.urlencoded({extended : true})); //поддерживает тела запросов, закодированные в кодировке формы
+
 //получает все статьи
 app.get('/articles', (req, res, next) => {
     res.send(articles);
@@ -15,7 +19,9 @@ app.get('/articles', (req, res, next) => {
 
 //Создает статью
 app.post('/articles', (req, res, next) => {
-    res.send('Ok');
+    const article = {title : req.body.title};
+    articles.push(article);
+    res.send(article);
 });
 
 //Получает одну статью
