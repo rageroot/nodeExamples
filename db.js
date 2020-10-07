@@ -3,7 +3,7 @@ const dbname = 'later.sqlite';
 const db = new sqlite3.Database(dbname);
 
 db.serialize(() => {
-    const sql = `CREATE TABLE IF NOT EXIST articles
+    const sql = `CREATE TABLE IF NOT EXISTS articles
     (id integer primary key, title, content TEXT)
     `;
     db.run(sql);
