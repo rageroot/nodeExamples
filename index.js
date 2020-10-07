@@ -13,6 +13,10 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json()); //поддерживает тела запросов, закодированные в json
 app.use(bodyParser.urlencoded({extended : true})); //поддерживает тела запросов, закодированные в кодировке формы
+app.use(                    //поддерживает стили бутсрап
+    '/css/bootstrap.css',
+    express.static('node_modules/bootstrap/dist/css/bootstrap.css')
+);
 
 //получает все статьи
 app.get('/articles', (req, res, next) => {
