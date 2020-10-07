@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const ejs = require('ejs');
 const Article = require('./db').Article; //модуль базы данных
 const read = require('node-readability');
 const app = express();
@@ -17,6 +18,7 @@ app.use(                    //поддерживает стили бутсрап
     '/css/bootstrap.css',
     express.static('node_modules/bootstrap/dist/css/bootstrap.css')
 );
+app.set('view engine', 'ejs');
 
 //получает все статьи
 app.get('/articles', (req, res, next) => {
@@ -24,7 +26,10 @@ app.get('/articles', (req, res, next) => {
         if(err) return next(err);
         res.format({
             html: () => {
-                res.render('articles.ejs', {articles: articles});
+              //  res.send(ejs.render('articles.ejs', {articles: articles}));
+                res.render('articles', {
+                    articles: articles
+                });
             },
             json: () => {
                 res.send(articles);
