@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const Article = require('./db').Article; //модуль базы данных
+const read = require('node-readability');
 const app = express();
 const articles = [{title: 'Example'}];
 
@@ -23,9 +24,17 @@ app.get('/articles', (req, res, next) => {
 
 //Создает статью
 app.post('/articles', (req, res, next) => {
-    const article = {title : req.body.title};
-    articles.push(article);
-    res.send(article);
+   const url = req.body.url;
+   read(url, (err, result) => {
+       if(err || !result) res.status(500).send('Error download article');
+       Article.create(
+           {title: result.title, content: result.content},
+           (err, article) => {
+               if(err) return next(err);
+               res.send('OK');
+           }
+       );
+   });
 });
 
 //Получает одну статью
