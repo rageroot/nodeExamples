@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const entry = require('models/entry');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -16,7 +17,7 @@ app.set('json spaces', 2); //удобночитаемый json
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));//расширеный разбор тела сообщения
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); //предоставляет статические файлы из указанного каталога
 
@@ -38,5 +39,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.get('/post', entries.form);
+app.post('/post', entries.submit);
 
 module.exports = app;
