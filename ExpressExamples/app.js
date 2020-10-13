@@ -6,6 +6,7 @@ var logger = require('morgan');
 //var Entry = require('models/entry');
 const entries = require("./routes/entries");
 const bodyParser = require('body-parser');
+const validate = require('./middleware/validate')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -27,6 +28,8 @@ app.get('/post', entries.form);
 app.post('/post',
     validate.required('entry[title]'),
     validate.lengthAbove('entry[title]', 4),
+    validate.required('entry[body]'),
+    validate.lengthAbove('entry[body]', 4),
     entries.submit);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
