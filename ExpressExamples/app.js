@@ -3,10 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const entry = require('models/entry');
+//var Entry = require('models/entry');
+const entries = require("./routes/entries");
+const bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
 
 var app = express();
 
@@ -14,6 +17,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('json spaces', 2); //удобночитаемый json
+
+app.use(bodyParser.json());   //разбор данных формы
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/post', entries.form);
+app.post('/post', entries.submit);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
@@ -39,8 +48,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-app.get('/post', entries.form);
-app.post('/post', entries.submit);
 
 module.exports = app;

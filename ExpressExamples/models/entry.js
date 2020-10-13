@@ -1,3 +1,4 @@
+'use strict'
 const redis = require('redis'); //Хранение данных
 const db = redis.createClient();//экземпляр клиента redis
 

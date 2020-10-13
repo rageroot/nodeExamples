@@ -1,4 +1,5 @@
-const model = require('models/entry');
+const Entry = require('../models/entry');
+
 
 exports.form = (req, res) => { //заоплняет шаблон, содержащий форму
     res.render('post', {title: 'Post'});
