@@ -21,8 +21,13 @@ app.set('json spaces', 2); //удобночитаемый json
 app.use(bodyParser.json());   //разбор данных формы
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', entries.list);
+
 app.get('/post', entries.form);
-app.post('/post', entries.submit);
+app.post('/post',
+    validate.required('entry[title]'),
+    validate.lengthAbove('entry[title]', 4),
+    entries.submit);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
