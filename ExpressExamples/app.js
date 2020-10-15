@@ -7,6 +7,7 @@ const logger = require('morgan');
 const entries = require("./routes/entries");
 const bodyParser = require('body-parser');
 const validate = require('./middleware/validate')
+const register = require('./routes/register');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -23,6 +24,9 @@ app.use(bodyParser.json());   //разбор данных формы
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', entries.list);
+
+app.get('/register', register.form);
+app.get('/register', register.submit);
 
 app.get('/post', entries.form);
 app.post('/post',
