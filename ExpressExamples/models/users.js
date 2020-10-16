@@ -59,7 +59,7 @@ class User{
     }
 
     static get(id, cb){
-        console.log(id);
+        //console.log(id);
         db.hgetall(`user:${id}`, (err, user) => { //получает даныне в виде объекта
             if(err) return cb(err);
             cb(null, new User(user)); //создает пользователя
@@ -88,8 +88,8 @@ user.save((err) => {
 */
 
 
-User.getByName('toby', (err, user) => {
+/*User.getByName('toby', (err, user) => {
         console.log(user);
-    });
+    });*/
 
 module.exports = User;

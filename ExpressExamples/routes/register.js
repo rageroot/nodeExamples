@@ -20,7 +20,7 @@ exports.submit = (req, res, next) => {
           user.save((err) => { //сохраняет нового пользователя
               if(err) return next(err);
               req.session.uid = user.id; //сохраняет id для аутентификации
-              res.redirect('/'); //перенаправляет на главную
+              res.redirect('/'); //перенаправляет на главнуютзт
           });
       }
   });

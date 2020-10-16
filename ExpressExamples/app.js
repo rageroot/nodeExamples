@@ -36,7 +36,7 @@ app.use(messages); //механизм передачи обратной связ
 app.get('/', entries.list);
 
 app.get('/register', register.form);
-app.get('/register', register.submit);
+app.post('/register', register.submit);
 
 app.get('/post', entries.form);
 app.post('/post',
