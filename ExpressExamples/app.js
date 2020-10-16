@@ -8,6 +8,7 @@ const entries = require("./routes/entries");
 const bodyParser = require('body-parser');
 const validate = require('./middleware/validate')
 const register = require('./routes/register');
+const session = require('express-session');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -22,6 +23,11 @@ app.set('json spaces', 2); //удобночитаемый json
 
 app.use(bodyParser.json());   //разбор данных формы
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(session({ //поддержка сеансов
+  secret: 'secret',
+  resave: false, saveUninitialized: true
+}));
 
 app.get('/', entries.list);
 
