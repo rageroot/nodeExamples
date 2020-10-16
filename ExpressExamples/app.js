@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const validate = require('./middleware/validate')
 const register = require('./routes/register');
 const session = require('express-session');
+const messages = require('./middleware/messages')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -28,6 +29,9 @@ app.use(session({ //поддержка сеансов
   secret: 'secret',
   resave: false, saveUninitialized: true
 }));
+
+app.use(messages); //механизм передачи обратной связи пользователю. Требуется для возможности обратить из любой вьюшки
+//
 
 app.get('/', entries.list);
 
