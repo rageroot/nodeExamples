@@ -10,6 +10,7 @@ const validate = require('./middleware/validate')
 const register = require('./routes/register');
 const session = require('express-session');
 const messages = require('./middleware/messages')
+const login = require('./routes/login');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -45,6 +46,10 @@ app.post('/post',
     validate.required('entry[body]'),
     validate.lengthAbove('entry[body]', 4),
     entries.submit);
+
+app.get('/login', login.form);
+app.post('/login', login.submit);
+app.get('/logout', login.logout);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
