@@ -56,6 +56,7 @@ app.post('/post',
 app.get('/login', login.form);
 app.post('/login', login.submit);
 app.get('/logout', login.logout);
+app.post('/api/entry', entries.submit);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
