@@ -9,3 +9,11 @@ exports.auth = (req, res, next) => {
         next(err);
     });
 };
+
+exports.user = (req, res, next) => {
+    User.get(req.params.id, (err, user) => {
+        if(err) return next(err);
+        if(!user.id) return res.sendStatus(404);
+        res.json(user);
+    })
+};

@@ -34,6 +34,7 @@ app.use(session({ //поддержка сеансов
 }));
 
 app.use('/api', api.auth); //API аутентификации
+app.get('/api/user/:id', api.user);
 
 app.use(user);
 app.use(messages); //механизм передачи обратной связи пользователю. Требуется для возможности обратить из любой вьюшки
