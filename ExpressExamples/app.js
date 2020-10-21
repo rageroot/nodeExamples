@@ -12,6 +12,7 @@ const session = require('express-session');
 const messages = require('./middleware/messages')
 const login = require('./routes/login');
 const user = require('./middleware/user');
+const api = require('./routes/api');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -31,6 +32,8 @@ app.use(session({ //поддержка сеансов
   secret: 'secret',
   resave: false, saveUninitialized: true
 }));
+
+app.use('/api', api.auth); //API аутентификации
 
 app.use(user);
 app.use(messages); //механизм передачи обратной связи пользователю. Требуется для возможности обратить из любой вьюшки
