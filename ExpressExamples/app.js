@@ -1,9 +1,10 @@
+'use strict'
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-//const Entry = require('models/entry');
+const Entry = require('./models/entry');
 const entries = require("./routes/entries");
 const bodyParser = require('body-parser');
 const validate = require('./middleware/validate')
@@ -13,6 +14,7 @@ const messages = require('./middleware/messages')
 const login = require('./routes/login');
 const user = require('./middleware/user');
 const api = require('./routes/api');
+const page = require('./middleware/page');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -56,7 +58,10 @@ app.post('/post',
 app.get('/login', login.form);
 app.post('/login', login.submit);
 app.get('/logout', login.logout);
+
 app.post('/api/entry', entries.submit);
+
+app.get('/api/entries/:page?', page(Entry.count), api.entries);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов

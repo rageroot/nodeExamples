@@ -1,7 +1,7 @@
 const User = require('../models/users');
 
 module.exports = (req, res, next) => {
-    if(req.remoteUser) {
+    if(req.remoteUser) {        //метка обращения к api
         res.locals.user = req.remoteUser;
     }
 

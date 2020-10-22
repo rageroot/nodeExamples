@@ -1,6 +1,7 @@
 const auth = require('basic-auth');
 const express = require('express');
 const User = require('../models/users');
+const Entry = require('../models/entry');
 
 exports.auth = (req, res, next) => {
     const {name, pass} = auth(req);
@@ -15,5 +16,13 @@ exports.user = (req, res, next) => {
         if(err) return next(err);
         if(!user.id) return res.sendStatus(404);
         res.json(user);
+    })
+};
+
+exports.entries = (req, res, next) => {
+    const page = req.page; //номер страницы из запроса
+    Entry.getRange(page.from, page.to, (err, entries) => {
+        if(err) return next(err);
+        res.json(entries);
     })
 };
