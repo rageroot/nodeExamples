@@ -32,7 +32,9 @@ exports.entries = (req, res, next) => {
             },
 
             xml: () => { //ответ XML
-                  res.write('<entries>\n');
+                res.render('entries/xml', {entries: entries});
+
+                 /* res.write('<entries>\n');
                   entries.forEach((entry) => {
                       res.write(`
                         <entry>
@@ -42,7 +44,7 @@ exports.entries = (req, res, next) => {
                         </entry>                      `
                       );
                   });
-                  res.end('</entries>');
+                  res.end('</entries>');*/
             }
         });
     });
