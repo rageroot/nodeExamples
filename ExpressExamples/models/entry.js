@@ -31,6 +31,10 @@ class Entry{
             cb(null, entries);
         });
     }
+
+    static count(cb){   //количество записей
+        db.llen('entries', cb);
+    }
 }
 
 module.exports = Entry;

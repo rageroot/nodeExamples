@@ -4,11 +4,13 @@ const User = require('../models/users');
 const Entry = require('../models/entry');
 
 exports.auth = (req, res, next) => {
-    const {name, pass} = auth(req);
+   /* const {name, pass} = auth(req);
     User.authenticate(name, pass, (err, user) => {
         if(user) req.remoteUser = user;
         next(err);
-    });
+    });*/
+    req.remoteUser = auth(req);
+    next();
 };
 
 exports.user = (req, res, next) => {

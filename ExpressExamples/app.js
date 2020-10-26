@@ -37,6 +37,8 @@ app.use(session({ //поддержка сеансов
 
 app.use('/api', api.auth); //API аутентификации
 app.get('/api/user/:id', api.user);
+app.get('/api/entries/:page?', page(Entry.count), api.entries);
+
 
 app.use(user);
 app.use(messages); //механизм передачи обратной связи пользователю. Требуется для возможности обратить из любой вьюшки
@@ -61,7 +63,6 @@ app.get('/logout', login.logout);
 
 app.post('/api/entry', entries.submit);
 
-app.get('/api/entries/:page?', page(Entry.count), api.entries);
 
 app.use(logger('dev')); //выводит журналы в формате удобном для разработки
 app.use(express.json());  //разбирает тела запросов
