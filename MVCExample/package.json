@@ -1,0 +1,19 @@
+{
+  "name": "mvcexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rageroot/nodeExamples.git"
+  },
+  "author": "Rage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rageroot/nodeExamples/issues"
+  },
+  "homepage": "https://github.com/rageroot/nodeExamples#readme"
+}
