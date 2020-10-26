@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6158f028-82f3-461e-b0fa-b0971fdf6465" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1idlhxBhycTaS5pm0i4KS0gtvYS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6158f028-82f3-461e-b0fa-b0971fdf6465" name="Default Changelist" comment="" />
+      <created>1602245472371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602245472371</updated>
+      <workItem from="1602245473382" duration="4029000" />
+      <workItem from="1602483383565" duration="9126000" />
+      <workItem from="1602570918635" duration="14739000" />
+      <workItem from="1602752281873" duration="11032000" />
+      <workItem from="1602840958246" duration="6568000" />
+      <workItem from="1603196304556" duration="7623000" />
+      <workItem from="1603280433277" duration="5425000" />
+      <workItem from="1603346707304" duration="5836000" />
+      <workItem from="1603688779725" duration="6794000" />
+    </task>
+    <task id="LOCAL-00001" summary="Сгенерировано приложение express">
+      <created>1602248137338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602248137338</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Создана модель redis">
+      <created>1602487657206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602487657206</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Форма отправки данных /post">
+      <created>1602504086875</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602504086875</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Фома отправки данных заработала">
+      <created>1602577143708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602577143708</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Начало создания модуля валидации">
+      <created>1602582243872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582243872</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Заработал модуль валидации">
+      <created>1602593893176</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602593893176</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Создаа модель для авторизации пользователей">
+      <created>1602597523453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602597523453</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Закончена модель авторизации пользователя">
+      <created>1602761470217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602761470217</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Начало реализации функционала регистрации">
+      <created>1602763269387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602763269387</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Создане функционала обмена сообщениями между запросами">
+      <created>1602845782012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602845782012</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Закончен модуль регистрации">
+      <created>1602847043055</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602847043055</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Исправлены ошибки в модуле регистрации">
+      <created>1602849747157</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602849747157</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Создан механизм аутентификации">
+      <created>1603200281983</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603200281983</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Добавлено главное меню">
+      <created>1603201588910</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603201588910</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Создано меню">
+      <created>1603205285200</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603205285200</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Аутентификаци">
+      <created>1603283479687</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603283479687</updated>
+    </task>
+    <task id="LOCAL-00017" summary="GET /api/user/:id">
+      <created>1603284813067</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603284813067</updated>
+    </task>
+    <task id="LOCAL-00018" summary="api добавления записей">
+      <created>1603286920373</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603286920373</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Промежуточный компонент вывода страниц">
+      <created>1603349920188</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603349920188</updated>
+    </task>
+    <task id="LOCAL-00020" summary="маршрут api/entries">
+      <created>1603697198018</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603697198018</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Реализация согласования контента">
+      <created>1603700774480</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603700774480</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Ответ в виде XML">
+      <created>1603708692870</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603708692870</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Сгенерировано приложение express" />
+    <MESSAGE value="Создана модель redis" />
+    <MESSAGE value="Форма отправки данных /post" />
+    <MESSAGE value="Фома отправки данных заработала" />
+    <MESSAGE value="Начало создания модуля валидации" />
+    <MESSAGE value="Заработал модуль валидации" />
+    <MESSAGE value="Создаа модель для хранения юзеров" />
+    <MESSAGE value="Создаа модель для авторизации пользователей" />
+    <MESSAGE value="Закончена модель авторизации пользователя" />
+    <MESSAGE value="Начало реализации функционала регистрации" />
+    <MESSAGE value="Создане функционала обмена сообщениями между запросами" />
+    <MESSAGE value="Закончен модуль регистрации" />
+    <MESSAGE value="Исправлены ошибки в модуле регистрации" />
+    <MESSAGE value="Создан механизм аутентификации" />
+    <MESSAGE value="Добавлено главное меню" />
+    <MESSAGE value="Создано меню" />
+    <MESSAGE value="Аутентификаци" />
+    <MESSAGE value="GET /api/user/:id" />
+    <MESSAGE value="api добавления записей" />
+    <MESSAGE value="Промежуточный компонент вывода страниц" />
+    <MESSAGE value="маршрут api/entries" />
+    <MESSAGE value="Реализация согласования контента" />
+    <MESSAGE value="Ответ в виде XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ответ в виде XML" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="64" y="91" width="858" height="850" key="CommitChangelistDialog2" timestamp="1603708692813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="64" y="91" width="858" height="850" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603708692813" />
+    <state width="1899" height="143" key="GridCell.Tab.0.bottom" timestamp="1602251557313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602251557313" />
+    <state width="1899" height="143" key="GridCell.Tab.0.center" timestamp="1602251557312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="143" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602251557312" />
+    <state width="1899" height="143" key="GridCell.Tab.0.left" timestamp="1602251557312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="143" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602251557312" />
+    <state width="1899" height="143" key="GridCell.Tab.0.right" timestamp="1602251557313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="143" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602251557313" />
+    <state x="93" y="255" width="800" height="522" key="Vcs.Push.Dialog.v2" timestamp="1603708695762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="93" y="255" width="800" height="522" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603708695762" />
+    <state x="137" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1603285726713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="137" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603285726713" />
+  </component>
+</project>
