@@ -25,6 +25,25 @@ exports.entries = (req, res, next) => {
     const page = req.page; //номер страницы из запроса
     Entry.getRange(page.from, page.to, (err, entries) => {
         if(err) return next(err);
-        res.json(entries);
-    })
+
+        res.format({ //отвечает по разному, в зависимости от значения заголовка Accept
+            json: () => { //ответ JSON
+                res.send(entries);
+            },
+
+            xml: () => { //ответ XML
+                  res.write('<entries>\n');
+                  entries.forEach((entry) => {
+                      res.write(`
+                        <entry>
+                        <title>${entry.title}</title>
+                        <body>${entry.username}</body>
+                        <username>${entry.username}</username>
+                        </entry>                      `
+                      );
+                  });
+                  res.end('</entries>');
+            }
+        });
+    });
 };
