@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1291b806-1957-4082-9df7-67fd30b81846" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/blog_page.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entries.txt" beforeDir="false" afterPath="$PROJECT_DIR$/entries.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603709932687</updated>
       <workItem from="1603709933730" duration="5566000" />
-      <workItem from="1603781620220" duration="599000" />
+      <workItem from="1603781620220" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="функция для чтения и разбора файла с записями">
       <created>1603711737992</created>
