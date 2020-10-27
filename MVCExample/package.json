@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rageroot/nodeExamples/issues"
   },
-  "homepage": "https://github.com/rageroot/nodeExamples#readme"
+  "homepage": "https://github.com/rageroot/nodeExamples#readme",
+  "dependencies": {
+    "ejs": "^3.1.5"
+  }
 }

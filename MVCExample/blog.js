@@ -1,6 +1,13 @@
 'use strict'
 const fs = require('fs');
 const http = require('http');
+const ejs = require('ejs');
+const template = fs.readFileSync('./templates/blog_page.ejs', 'utf8');
+
+function blogPage(entries){
+    const values = {entries};
+    return ejs.render(template, values);
+}
 
 function getEntries(){ //Функция для чтения и разбора текста записи
     const entries = [];
@@ -26,3 +33,11 @@ function getEntries(){ //Функция для чтения и разбора т
 
 const entries = getEntries();
 console.log(entries);
+
+const server = http.createServer((req, res) => {
+    const output = blogPage(entries);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end(output);
+});
+
+server.listen(8000);
