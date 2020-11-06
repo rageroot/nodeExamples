@@ -4,7 +4,7 @@ const db = new pg.Client({ //инициализация базы
     host: 'localhost',
     port: 5432,
     user: 'rage',
-    password: '123',
+    password: 123,
 });
 db.connect((err, client) => { //подключение
     if(err) throw err;
@@ -21,7 +21,7 @@ db.query(`
 `, (err, result) => {
     if(err) throw err;
     console.log('Create table "snippets"');
-    //db.end()
+   // db.end()
 });
 
 //вставка данных в таблицу
@@ -50,7 +50,7 @@ db.query(`
         });
 });*/
 
-const id = 1;
+/*const id = 1;
 const body = 'greetingsd';
 db.query(`
     UPDATE snippets SET body = '${body}' WHERE id=${id};
@@ -58,4 +58,13 @@ db.query(`
     if(err) throw err;
     console.log('Updated %s rows', result.rowCount);
     db.end();
-});
+});*/
+
+db.query(
+    `
+        SELECT * FROM snippets ORDER BY id
+    `, (err, result) => {
+        if(err) throw err;
+        console.log(result);
+        db.end();
+    });
