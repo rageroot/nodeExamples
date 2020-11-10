@@ -1,13 +1,34 @@
-const MongoClient = require('mongodb');
+const mongo = require('mongodb').MongoClient;
 
-const options = {
-    useUnifiedTopology: true, //использовать новый механизм мониторинга и обнаружения сервера
-};
-MongoClient.connect('mongodb://localhost:27017/articles', options)
-    .then(db => {
-        console.log('Client ready');
-        db.close();
-}, console.error);
+
+const MongoClient = require("mongodb").MongoClient;
+
+const url = "mongodb://localhost:27017/";
+const mongoClient = new MongoClient(url, { useNewUrlParser: true,
+    useUnifiedTopology: true});
+
+mongoClient.connect(function(err, client){
+
+    const db = client.db("articles");
+    const collection = db.collection("users");
+    let user = {name: "Tom", age: 23};
+    collection.insertOne(user, function(err, result){
+
+        if(err){
+            return console.log(err);
+        }
+        console.log(result.ops);
+      //  client.close();
+    });
+
+    collection.find({name: "Tom"}).toArray((err, res) =>{
+        console.log(res);
+    });
+
+});
+
+
+
 
 /*
 collection.insert(doc) — вставка одного или нескольких документов;
