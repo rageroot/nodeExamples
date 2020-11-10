@@ -1,4 +1,19 @@
-const mongo = require('mongodb').MongoClient;
+
+const db = require('./db');
+
+db().then(() => {
+    db.Article.create({ title: 'An article!' }).then(() => {
+        db.Article.all().then(articles => {
+            console.log(articles);
+            process.exit();
+        });
+    });
+});
+
+
+
+
+/*const mongo = require('mongodb').MongoClient;
 
 
 const MongoClient = require("mongodb").MongoClient;
@@ -25,7 +40,7 @@ mongoClient.connect(function(err, client){
         console.log(res);
     });
 
-});
+});*/
 
 
 
