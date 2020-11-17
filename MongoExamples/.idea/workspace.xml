@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b2b0627-1e31-48f9-b5af-3cf87de6b5f2" name="Default Changelist" comment="Переход на старую версию mongo" />
+    <list default="true" id="6b2b0627-1e31-48f9-b5af-3cf87de6b5f2" name="Default Changelist" comment="Переход на старую версию mongo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604649678601</updated>
-      <workItem from="1604649680423" duration="12145000" />
+      <workItem from="1604649680423" duration="12166000" />
     </task>
     <task id="LOCAL-00001" summary="Создал подключение к монго">
       <created>1604665834096</created>
@@ -111,22 +113,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Переход на старую версию mongo" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="200" key="GridCell.Tab.0.bottom" timestamp="1605013357143">
+    <state width="1899" height="200" key="GridCell.Tab.0.bottom" timestamp="1605271281029">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state width="1899" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605013357143" />
-    <state width="1899" height="200" key="GridCell.Tab.0.center" timestamp="1605013357143">
+    <state width="1899" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605271281029" />
+    <state width="1899" height="200" key="GridCell.Tab.0.center" timestamp="1605271281029">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state width="1899" height="200" key="GridCell.Tab.0.center/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605013357143" />
-    <state width="1899" height="200" key="GridCell.Tab.0.left" timestamp="1605013357142">
+    <state width="1899" height="200" key="GridCell.Tab.0.center/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605271281029" />
+    <state width="1899" height="200" key="GridCell.Tab.0.left" timestamp="1605271281028">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state width="1899" height="200" key="GridCell.Tab.0.left/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605013357142" />
-    <state width="1899" height="200" key="GridCell.Tab.0.right" timestamp="1605013357143">
+    <state width="1899" height="200" key="GridCell.Tab.0.left/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605271281028" />
+    <state width="1899" height="200" key="GridCell.Tab.0.right" timestamp="1605271281029">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
-    <state width="1899" height="200" key="GridCell.Tab.0.right/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605013357143" />
+    <state width="1899" height="200" key="GridCell.Tab.0.right/0.0.1920.1056/1920.0.1280.1024@0.0.1920.1056" timestamp="1605271281029" />
     <state x="555" y="263" width="800" height="522" key="Vcs.Push.Dialog.v2" timestamp="1605013442944">
       <screen x="0" y="0" width="1920" height="1056" />
     </state>
