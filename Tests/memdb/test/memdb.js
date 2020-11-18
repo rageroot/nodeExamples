@@ -42,5 +42,4 @@ describe('memdb', () => {
             assert(ret == null);
         });
     });
-
 });
